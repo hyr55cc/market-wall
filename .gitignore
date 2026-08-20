@@ -1,0 +1,11 @@
+node_modules
+dist
+
+# Never commit secrets. The pattern is broad on purpose: .env.local,
+# .env.production and any stray file created by a mistyped shell redirect are
+# all caught, while the documented template is explicitly kept.
+.env
+.env.*
+!.env.example
+
+*.log
